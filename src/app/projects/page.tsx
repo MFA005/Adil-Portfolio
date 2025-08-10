@@ -16,8 +16,6 @@ const page = () => {
             key={index}
             imgUrl = {project.imgUrl}
             title = {project.title}
-            stack = {project.stack}
-            githubLink = {project.githubLink}
             description={project.description}
             
         />

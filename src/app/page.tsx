@@ -32,7 +32,7 @@ export default function Home() {
               Get In Touch →
             </a>
             <a
-              href="/cv.pdf"
+              href="/adil-cv.pdf"
               className="border border-white text-white px-5 py-3 rounded-lg hover:bg-white/30 transition"
               download
             >
@@ -42,13 +42,13 @@ export default function Home() {
 
           {/* Social Icons */}
           <div className="flex ml-3 items-center gap-6 mt-6">
-            <a href="mailto:abdulrahman@example.com" className="text-white hover:scale-[110%] text-xl">
+            <a href="mailto:sabdulrahman.adil@gmail.com" className="text-white hover:scale-[110%] text-xl">
               <FaEnvelope />
             </a>
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="text-white hover:scale-[110%] text-xl">
+            <a href="https://github.com/Orbweaver15" target="_blank" rel="noopener noreferrer" className="text-white hover:scale-[110%] text-xl">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="text-white hover:scale-[110%] text-xl">
+            <a href="https://www.linkedin.com/in/abdulrahman-adil-28264a221/" target="_blank" rel="noopener noreferrer" className="text-white hover:scale-[110%] text-xl">
               <FaLinkedin />
             </a>
           </div>

@@ -27,7 +27,6 @@ const Skills = () => {
             key={index}
             imgUrl={project.imgUrl}
             title={project.title}
-            description={project.description}
           />
         ))}
       </div>

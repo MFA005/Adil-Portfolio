@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 
 
 
-function SkillItem({ title, imgUrl, description }) {
+function SkillItem({ title, imgUrl}) {
   
 
     return (
