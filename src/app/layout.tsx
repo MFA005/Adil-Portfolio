@@ -1,16 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Roboto, Roboto_Condensed} from "next/font/google";
+import local from 'next/font/local'
 import "./globals.css";
+import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const norwester = local({
+  src: '../fonts/norwester.otf', 
+  variable: '--font-norwester'
+})
+
+const neue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable:'--font-neue'
+});
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400','500','600','300'],
+  variable:'--font-roboto'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const robotocnd = Roboto_Condensed({
+  subsets: ['latin'],
+  weight: ['400','500','600','300'],
+  variable:'--font-robotocnd'
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +40,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${norwester.variable} ${neue.variable} ${roboto.variable} ${robotocnd.variable} antialiased`}
       >
+        <header className="w-full px-6 py-6 ">
+      <nav className="flex justify-center md:justify-end items-center  mx-auto">
+        <div className="flex gap-10 text-sm text-white">
+          <Link href="/" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm ">HOME</Link>
+          <Link href="/projects" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">PROJECTS</Link>          
+          <Link href="/skills" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">SKILLS</Link>
+          <Link href="/contact" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">CONTACT ME</Link>
+        </div>
+      </nav>
+    </header>
         {children}
       </body>
     </html>
