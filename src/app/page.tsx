@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex ml-3 items-center gap-6 mt-6">
+          <div className="flex ml-3 items-center gap-6 mt-12">
             <a href="mailto:sabdulrahman.adil@gmail.com" className="text-white hover:scale-[110%] text-xl">
               <FaEnvelope />
             </a>
