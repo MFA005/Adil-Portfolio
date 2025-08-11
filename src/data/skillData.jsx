@@ -29,7 +29,7 @@ export default [
     },
     {
         title: 'MSOffice',
-        imgUrl: '/SkillsImg/MSoffice-logo.png',
+        imgUrl: '/SkillsImg/MSOffice-logo.png',
     },
     {
         title: 'Multisim',
