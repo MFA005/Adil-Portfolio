@@ -50,6 +50,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  
 
 }
 /*
@@ -146,6 +147,8 @@ body{
 }
 /* ---break---
 */
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -156,4 +159,32 @@ body{
 
   }
 
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.modern-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.modern-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.modern-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+
+.modern-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255, 0.4) transparent;
+  transition: background-color 0.3s ease;
 }

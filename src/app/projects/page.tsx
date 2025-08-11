@@ -6,15 +6,16 @@ const page = () => {
   return (
     <div className='p-20'>
       
-      <h1 className='font-anton pl-10 pb-10 text-white tracking-wide text-7xl'>
+      <h1 className='pl-10 pb-10 text-white tracking-wide text-7xl'>
         PROJECTS
       </h1>
       <hr className='border-[0.5] border-white/40 ml-10 w-[50%] mt-10'/>
-      <div className='mt-30 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8 items-start'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8 items-start'>
       {portfolio.map((project, index) => (
         <PortfolioItem
             key={index}
-            imgUrl = {project.imgUrl}
+            media={project.media}
+            img = {project.img}
             title = {project.title}
             description={project.description}
             

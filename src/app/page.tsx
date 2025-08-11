@@ -57,13 +57,14 @@ export default function Home() {
         {/* Right Content - Image */}
         <div className="relative mt-10">
           {/* Decorative background shape */}
-          <div className="absolute -z-10 top-6 left-6 w-72 h-90 bg-white rounded-lg transform rotate-12"></div>
+          <div className="absolute -z-1 top-4 left-6 w-72 h-90 border-[1px] bg-black border-white  rounded-lg transform rotate-12"></div>
+          <div className="absolute -z-11 top-7 left-10 w-72 h-90 border-[1px] bg-black border-white rounded-lg transform rotate-20"></div>
 
           {/* Profile Image */}
           <img
             src="/adil-main-pic.jpg"
             alt="Abdulrahman Adil"
-            className="w-72 h-96 object-cover rounded-lg shadow-lg border-0 border-white"
+            className="w-72 h-96 object-cover rounded-lg border-0 "
           />
         </div>
       </div>

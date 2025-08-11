@@ -1,11 +1,9 @@
 'use client'
 import React, { useState, useRef } from 'react';
-// import { useIsVisible } from '../data';
-import { GithubLogoYellow } from '../data/image';
 import DetailsOverlay from "./DetailsOverlay";
 
 
-function PortfolioItem({ title, imgUrl, description }) {
+function PortfolioItem({ title, img, media, description }) {
   
     // const refProject = useRef(null);
     //   const isVisibleProject = useIsVisible(refProject);
@@ -32,8 +30,8 @@ function PortfolioItem({ title, imgUrl, description }) {
       
        {/* make details overlay for each project */}
 
-        <div className="w-full h-52 flex items-center justify-center bg-white/50 rounded-lg cursor-pointer">
-          <img src={imgUrl} alt={title} className="w-full h-full object-cover rounded-lg" />
+        <div className="w-auto h-auto flex items-center justify-center bg-white/50 rounded-lg cursor-pointer">
+          <img src={img} alt={title} className="w-full h-full object-cover rounded-lg" />
         </div>
         
         <h3 className="text-white  tracking-wider font-norwester text-lg py-4 pb-6 md:pb-3 mt-4 ">{title}</h3>
@@ -48,9 +46,10 @@ function PortfolioItem({ title, imgUrl, description }) {
         onClick={handleCloseFullscreen} // Close when clicked on the GIF
         >
           <div
-            className="relative"   
+            className="relative" 
+            onClick={(e) => e.stopPropagation()}  
           >
-            <DetailsOverlay className='max-w-[90vw] max-h-[90vh] object-contain rounded-lg' title={title} description={description} videos={[]} techStack={[]} githubLink={"asd"}/>
+            <DetailsOverlay className='max-w-[90vw] max-h-[90vh] object-contain rounded-lg' title={title} description={description} media={media} techStack={[]} githubLink={"asd"} onClose={handleCloseFullscreen}/>
             
           </div>
         </div>
