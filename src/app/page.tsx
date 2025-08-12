@@ -14,12 +14,12 @@ export default function Home() {
           </span>
 
           <h1 className="text-4xl mb-10 md:text-5xl font-bold text-white mt-4">
-            Mechanical Engineer <br />Based in Malaysia
+            Mechatronics Engineer <br />Based in Malaysia
           </h1>
 
           <p className="text-white/60 mt-4 max-w-md">
-            I’m a mechanical engineer passionate about designing, analyzing, 
-            and optimizing mechanical systems that deliver efficiency, 
+            I’m a mechatronics engineer passionate about designing, analyzing, 
+            and optimizing mechatronics and robotics systems that deliver efficiency, 
             durability, and innovation.
           </p>
 
