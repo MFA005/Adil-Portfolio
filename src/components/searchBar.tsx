@@ -7,7 +7,7 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => {
   return (
-    <div className="my-5 mb-15 text-white font-robotocnd ml-10 w-[40%]">
+    <div className="my-5 m-auto mb-15 text-white font-robotocnd md:ml-10 w-[60%] md:w-[40%]">
       <input
         type="text"
         placeholder="Search skills..."

@@ -5,10 +5,10 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 export default function Home() {
   return (
   
-      <div className="mx-auto max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-50 pl-10 items-center">
+      <div className="mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-50 pl-10 items-center">
         
         {/* Left Content */}
-        <div className="ml-20 mt-20">
+        <div className="md:ml-20 m-5 p-5 md:p-0 md:m-0 mt-20 md:mt-20">
           <span className="inline-block bg-white text-black px-3 py-1 rounded-full text-sm font-medium">
             Hi everyone 👋, I’m Abdulrahman Adil
           </span>
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         {/* Right Content - Image */}
-        <div className="relative mt-10">
+        <div className="relative hidden lg:flex mt-10">
           {/* Decorative background shape */}
           <div className="absolute -z-1 top-4 left-6 w-72 h-90 border-[1px] bg-black border-white  rounded-lg transform rotate-12"></div>
           <div className="absolute -z-11 top-7 left-10 w-72 h-90 border-[1px] bg-black border-white rounded-lg transform rotate-20"></div>
