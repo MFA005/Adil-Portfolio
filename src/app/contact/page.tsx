@@ -15,7 +15,7 @@ const Contact = () => {
           <h2 className="text-xl lg:text-3xl font-semibold text-center">
             AbdulRahman Adil
             <br />
-            <span className="text-white text-center text-lg lg:text-xl font-light">Mechanical Engineer</span>
+            <span className="text-white text-center text-lg lg:text-xl font-light">Mechatronics Engineer</span>
           </h2>
         </div>
 
