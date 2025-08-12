@@ -9,11 +9,11 @@ const Contact = () => {
         <div className="flex flex-col m-5 items-center justify-center text-white">
           <img
             src="/adil-main-pic.jpg"
-            alt="AbdulRahman Adil"
+            alt="Abdulrahman Adil"
             className="w-30 lg:w-60 rounded-full shadow-lg mb-5"
           />
           <h2 className="text-xl lg:text-3xl font-semibold text-center">
-            AbdulRahman Adil
+            Abdulrahman Adil
             <br />
             <span className="text-white text-center text-lg lg:text-xl font-light">Mechatronics Engineer</span>
           </h2>
