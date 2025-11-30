@@ -1,5 +1,6 @@
 
-import { FaLinkedin, FaGithub, FaEnvelope, FaArrowDown } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
           {/* Left Content */}
           <div className="md:ml-20 m-5 p-5 md:p-0 md:m-0 mt-20 md:mt-20">
             <span className="inline-block bg-white text-black px-3 py-1 rounded-full text-sm font-medium">
-              Hi everyone 👋, I’m Abdulrahman Adil
+              Hi everyone 👋, I&apos;m Abdulrahman Adil
             </span>
 
             <h1 className="text-4xl mb-10 md:text-5xl font-bold text-white mt-4">
@@ -20,7 +21,7 @@ export default function Home() {
             </h1>
 
             <p className="text-white/60 mt-4 max-w-md">
-              I’m a mechanical engineer passionate about designing, analyzing, 
+              I&apos;m a mechanical engineer passionate about designing, analyzing, 
               and optimizing mechanical systems that deliver efficiency, 
               durability, and innovation.
             </p>
@@ -60,9 +61,11 @@ export default function Home() {
             <div className="absolute -z-11 top-7 left-10 w-72 h-90 border-[1px] bg-black border-white rounded-lg transform rotate-20 shadow-[0_0_25px_rgba(255,255,255,0.5)]"></div>
 
             {/* Profile Image */}
-            <img
+            <Image
               src="/adil-main-pic.png"
               alt="Abdulrahman Adil"
+              width={288}
+              height={384}
               className="w-72 h-96 object-cover rounded-lg border-0 shadow-[0_0_25px_rgba(255,255,255,0.5)]"
             />
           </div>
@@ -96,13 +99,13 @@ export default function Home() {
               I am a <strong className="text-white">Mechatronics Engineer</strong> based in Riyadh, driven by a passion for making complex systems work efficiently. <br className="hidden md:block" />My engineering philosophy is simple: <strong className="text-white">understand the hardware, master the software, and optimize the process</strong>.
             </p>
             <p>
-              My background is rooted in hands-on R&D. From diagnosing thermal failures in quadruped robots (Dingos) to designing autonomous drone delivery mechanisms, I have developed a resilience for troubleshooting and a proficiency in <strong className="text-white">ROS2, Python, and Embedded Systems.</strong> I don't just write code from a desk; I am comfortable in the field, soldering circuits, testing sensors, and ensuring the machine performs in the real world.
+              My background is rooted in hands-on R&D. From diagnosing thermal failures in quadruped robots (Dingos) to designing autonomous drone delivery mechanisms, I have developed a resilience for troubleshooting and a proficiency in <strong className="text-white">ROS2, Python, and Embedded Systems.</strong> I don&apos;t just write code from a desk; I am comfortable in the field, soldering circuits, testing sensors, and ensuring the machine performs in the real world.
             </p>
             <p>
               Currently, I am pivoting this expertise toward <strong className="text-white">Industrial Automation and Control Systems.</strong> I have a strong professional interest in <strong className="text-white">Siemens PCS 7</strong> and PLC architectures, aiming to apply my knowledge of autonomous logic to large-scale industrial processes. My goal is to work at the intersection of modern R&D and established industrial control, helping facilities modernize and automate.
             </p>
             <p>
-              As a <strong className="text-white">Saudi Premium Resident</strong>, I am available immediately for local roles, ready to bring technical precision, a "fix-it" mindset, and a hunger for learning to your engineering team.
+              As a <strong className="text-white">Saudi Premium Resident</strong>, I am available immediately for local roles, ready to bring technical precision, a &quot;fix-it&quot; mindset, and a hunger for learning to your engineering team.
             </p>
           </div>
         </div>

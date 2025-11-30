@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
+import Image from 'next/image'
 
 const Contact = () => {
   return (
@@ -7,9 +8,11 @@ const Contact = () => {
       <div className="rounded-lg px-5 shadow-[0_0_40px_10px_rgba(255,255,255,0.2)] border-1 border-white bg-white/10 gap-20  flex flex-col justify-center md:flex-row items-center p-12 max-w-5xl w-full scale-110">
         {/* Left: Image + Name */}
         <div className="flex flex-col m-5 items-center justify-center text-white">
-          <img
+          <Image
             src="/adil-main-pic.png"
             alt="AbdulRahman Adil"
+            width={240}
+            height={240}
             className="w-30 lg:w-60 rounded-full shadow-[0_0_25px_rgba(255,255,255,0.4)] mb-5"
           />
           <h2 className="text-xl lg:text-3xl font-semibold text-center">
