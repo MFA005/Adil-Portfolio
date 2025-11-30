@@ -322,13 +322,13 @@ graph LR
   },
   {//Automated Driver Test Results
     title: 'Automated Driver Test Results',
-    img: '/projectGallery/ADTR/adtrpic4.jpg',
+    img: '/projectGallery/ADTR/adtrpic5.png',
     media: [
       '/projectGallery/ADTR/adtrpic3.png',
       '/projectGallery/ADTR/adtrpic1.jpg',
       '/projectGallery/ADTR/adtrpic2.jpg',
       '/projectGallery/ADTR/adtrpic4.jpg',
-      '/projectGallery/ADTR/adtrpic5.jpg',
+      '/projectGallery/ADTR/adtrpic5.png',
       '/projectGallery/ADTR/adtr1.mp4',
     ],
     description: `

@@ -13,9 +13,9 @@ const Contact = () => {
             className="w-30 lg:w-60 rounded-full shadow-[0_0_25px_rgba(255,255,255,0.4)] mb-5"
           />
           <h2 className="text-xl lg:text-3xl font-semibold text-center">
-            AbdulRahman Adil
+            Abdulrahman Adil
             <br />
-            <span className="text-white text-center text-lg lg:text-xl font-light">Mechanical Engineer</span>
+            <span className="text-white text-center text-lg lg:text-xl font-light">Mechatronics Engineer</span>
           </h2>
         </div>
 
