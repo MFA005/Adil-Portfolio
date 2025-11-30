@@ -21,12 +21,10 @@ function PortfolioItem({ title, img, media, description }) {
   };
 
     return (
-    <div  className={`mt-20 flex flex-col m-10 items-center md:border-hidden border-2 border-white/20 shadow-md shadow-black/50 md:shadow-none bg-black/40 md:bg-transparent rounded-lg gap-10 transition-opacity duration-1500 
-         
-      `}>
+    <div  className={`flex flex-col items-center md:border-hidden border-2 border-white/20 shadow-md shadow-black/50 md:shadow-none bg-black/40 md:bg-transparent rounded-lg gap-10 transition-opacity duration-1500 w-full`}>
         
       {/* Project Card */}
-      <div onClick={handleProjectClick} className="relative w-full p-8 pb-2 md:mb-14 md:pb-8 md:border-2 shadow-black/50 md:shadow-md border-white/10 md:bg-black/40  hover:border-white/70 transition-all duration-160 md:hover:scale-[102%] rounded-lg bg-transparent  ">
+      <div onClick={handleProjectClick} className="relative w-full p-8 pb-2 md:pb-8 md:border-2 shadow-black/50 md:shadow-md border-white/10 md:bg-black/40  hover:border-white/70 transition-all duration-160 md:hover:scale-[102%] rounded-lg bg-transparent  ">
       
        {/* make details overlay for each project */}
 

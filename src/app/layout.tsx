@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Roboto, Roboto_Condensed} from "next/font/google";
 import local from 'next/font/local'
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const norwester = local({
   src: '../fonts/norwester.otf', 
@@ -42,16 +43,8 @@ export default function RootLayout({
       <body
         className={`${norwester.variable} ${neue.variable} ${roboto.variable} ${robotocnd.variable} antialiased`}
       >
-        <header className="w-full px-6 py-6 ">
-      <nav className="flex justify-center md:justify-end items-center  mx-auto">
-        <div className="flex gap-10 text-sm text-white">
-          <Link href="/" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm ">HOME</Link>
-          <Link href="/projects" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">PROJECTS</Link>          
-          <Link href="/skills" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">SKILLS</Link>
-          <Link href="/contact" className="relative transition-all duration-150 hover:bg-white hover:text-black px-3 p-1 tracking-widest rounded-sm  ">CONTACT ME</Link>
-        </div>
-      </nav>
-    </header>
+        <ParticlesBackground />
+        <Navbar />
         {children}
       </body>
     </html>

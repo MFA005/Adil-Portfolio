@@ -68,7 +68,7 @@ h1{
   font-family: var(--font-norwester);
 }
 body{
-  background-color: #000000;
+  background-color: #101010;
   font-family: var(--font-robotocnd);
 
 }
@@ -187,4 +187,8 @@ body{
   scrollbar-width: thin;
   scrollbar-color: rgb(255, 255, 255, 0.4) transparent;
   transition: background-color 0.3s ease;
+}
+
+.hover-pause:hover {
+  animation-play-state: paused;
 }
